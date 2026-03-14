@@ -1,0 +1,36 @@
+name: Homework Agent
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install
+          playwright install-deps
+
+      - name: Run scraper
+        run: python run_all.py
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_TIMEOUT_SEC: 20
+          MASHOV_USERNAME: ${{ secrets.MASHOV_USERNAME }}
+          MASHOV_PASSWORD: ${{ secrets.MASHOV_PASSWORD }}
+          MOE_USERNAME: ${{ secrets.MOE_USERNAME }}
+          MOE_PASSWORD: ${{ secrets.MOE_PASSWORD }}
