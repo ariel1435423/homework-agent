@@ -7,6 +7,8 @@ import os
 import re
 import requests
 
+from playwright_context import close_browser_context, launch_browser_context
+
 try:
     from bs4 import BeautifulSoup
     HAS_BS4 = True
@@ -814,36 +816,42 @@ def main():
         else:
             args += ["--start-maximized"]
 
-        context = playwright.chromium.launch_persistent_context(
-            user_data_dir=PROFILE_DIR,
+        browser, context = launch_browser_context(
+            playwright,
+            profile_dir=PROFILE_DIR,
             headless=HEADLESS,
             args=args,
             viewport={"width": 1600, "height": 900},
+            label="CET",
         )
         page = context.new_page()
 
-        if not ensure_logged_in(page, ts):
-            print("[CET] Login failed")
-            context.close()
-            return []
+        try:
+            if not ensure_logged_in(page, ts):
+                print("[CET] Login failed")
+                return []
 
-        save_debug(page, ts, "cet_my_page")
+            save_debug(page, ts, "cet_my_page")
 
-        if HAS_BS4:
-            my_page_html = page.content()
-            request_state = build_request_state(context, page)
-            context.close()
-            tasks = extract_tasks_http(request_state, my_page_html)
-        else:
-            tasks = extract_tasks_browser(page)
-            context.close()
+            if HAS_BS4:
+                my_page_html = page.content()
+                request_state = build_request_state(context, page)
+                close_browser_context(browser, context)
+                browser = None
+                context = None
+                tasks = extract_tasks_http(request_state, my_page_html)
+            else:
+                tasks = extract_tasks_browser(page)
 
-        out_path = os.path.join(OUT_DIR, f"cet_tasks_{ts}.json")
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(tasks, f, ensure_ascii=False, indent=2)
+            out_path = os.path.join(OUT_DIR, f"cet_tasks_{ts}.json")
+            with open(out_path, "w", encoding="utf-8") as f:
+                json.dump(tasks, f, ensure_ascii=False, indent=2)
 
-        print(f"[CET] Found {len(tasks)} tasks -> {out_path}")
-        return tasks
+            print(f"[CET] Found {len(tasks)} tasks -> {out_path}")
+            return tasks
+        finally:
+            if context is not None:
+                close_browser_context(browser, context)
 
 
 if __name__ == "__main__":
