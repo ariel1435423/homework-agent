@@ -5,6 +5,8 @@ import json
 import os
 import re
 
+from playwright_context import close_browser_context, launch_browser_context
+
 load_dotenv()
 
 PROFILE_DIR = os.getenv("CLASSROOM_PROFILE_DIR", os.path.join(os.getcwd(), "chrome_profile"))
@@ -510,28 +512,31 @@ def main():
         else:
             args += ["--start-maximized"]
 
-        context = playwright.chromium.launch_persistent_context(
-            user_data_dir=PROFILE_DIR,
+        browser, context = launch_browser_context(
+            playwright,
+            profile_dir=PROFILE_DIR,
             headless=HEADLESS,
             args=args,
             viewport={"width": 1600, "height": 900},
+            label="Classroom",
         )
         page = context.new_page()
 
-        if not ensure_logged_in(page, ts):
-            print("[Classroom] Login failed")
-            context.close()
-            return []
+        try:
+            if not ensure_logged_in(page, ts):
+                print("[Classroom] Login failed")
+                return []
 
-        tasks = extract_tasks(page, ts)
+            tasks = extract_tasks(page, ts)
 
-        out_path = os.path.join(OUT_DIR, f"classroom_tasks_{ts}.json")
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(tasks, f, ensure_ascii=False, indent=2)
+            out_path = os.path.join(OUT_DIR, f"classroom_tasks_{ts}.json")
+            with open(out_path, "w", encoding="utf-8") as f:
+                json.dump(tasks, f, ensure_ascii=False, indent=2)
 
-        print(f"[Classroom] Found {len(tasks)} tasks -> {out_path}")
-        context.close()
-        return tasks
+            print(f"[Classroom] Found {len(tasks)} tasks -> {out_path}")
+            return tasks
+        finally:
+            close_browser_context(browser, context)
 
 
 if __name__ == "__main__":
