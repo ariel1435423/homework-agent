@@ -18,22 +18,33 @@ answers and adds one short sentence that carries new information.
 
 Approved level. Concrete nouns, one simple added fact, spoken at normal speed.
 
-## The four moments
+## The vocabulary
 
-| Sequence | Object | French |
-|---|---|---|
-| 1 — helicopter | מסוק | Comment ça s'appelle ? — Un hélicoptère. Il vole très haut, et il aide les policiers. |
-| 2 — theft | שוקולד | Où est le chocolat ? — the question Michel is literally asking in the plot |
-| 3 — police car | ניידת / מכשיר קשר | C'est une voiture de police. Elle a des lumières bleues. |
-| 5 — ending | שוטר | Le policier aide les gens. |
+Every word is police equipment or a police role, and every one is on screen at the moment Michel
+asks about it. `chocolat` was dropped — it is not a police word and it was taking a slot.
 
-Two moments reuse **C'est**, and the helicopter and car moments share the naming-question frame.
-That repetition is the teaching.
+| Sequence | Hebrew | French | What is in frame |
+|---|---|---|---|
+| 1 | מסוק | **hélicoptère** | Michel points at the parked helicopter |
+| 2 | גנב | **voleur** | Michel is searching for him: *Où est le voleur ?* |
+| 2 | מצלמה | **caméra** | The CCTV monitor that solved the case |
+| 3 | ניידת | **patrouille** | Michel points at the patrol car |
+| 3 | אזיקים | **menottes** | Michel holds up handcuffs and shakes them |
+| 3 | מכשיר קשר | **radio** | The radio in the car |
+| 3 | סירנה | **sirène** | Right after he presses the siren button |
+| 5 | שוטר | **policier** | Michel points at himself — the film's thesis word |
 
-### The joke that writes itself
+`patrouille` is used alone for the police car, per the user's decision.
 
-The thief, caught with the Kinder, says "סלט."
-Michel corrects him, completely deadpan: **"Non. Du chocolat."**
+The strongest two are `voleur` and `caméra`: Michel asks *Où est le voleur ?* while actually
+hunting for the thief, and names the camera while looking at the footage that caught him. The
+language and the plot are the same thing in those moments rather than the lesson interrupting
+the story.
+
+### The joke
+
+The thief, caught with the Kinder, says "סלט." Michel corrects him, completely deadpan:
+**"לא. Du chocolat."** This stays as a gag, not as vocabulary.
 
 ## Production note
 
