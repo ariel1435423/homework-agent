@@ -32,6 +32,10 @@ Nothing in this table may change mid-production. Identity consistency outranks b
 
 ## Dialogue pipeline
 
+Speech model: **`eleven_v3`**. `eleven_multilingual_v2` does NOT support Hebrew and mispronounces
+it; `eleven_v4` is not available on this account. ElevenLabs allows only **3 concurrent
+generations** — batch in threes or requests fail (and are still charged).
+
 The video model never generates Michel's Hebrew. Every line follows one path:
 
 ```
@@ -148,6 +152,25 @@ Never regenerate the whole film for one bad shot.
 7. Project shot list (`shot-list.csv`)
 8. ElevenLabs dialogue files
 9. Higgsfield generations organized by scene
+
+---
+
+## Render budget
+
+Output is **720p**, not 1080p — 1080p costs roughly double and the credit balance does not cover
+the film at that tier.
+
+| Tier | Cost (5 s shot) |
+|---|---|
+| `seedance_2_0` 1080p | 45 credits |
+| `seedance_2_0` 720p | 22.5 credits |
+| `seedance_2_0_mini` 720p | 12.5 credits |
+
+Routing under this constraint: `seedance_2_0` @720p for shots where Michel speaks,
+`seedance_2_0_mini` @720p for B-roll and shots where his mouth is not visible.
+
+Even so, ~50 remaining shots run to roughly 1,100–1,300 credits against a balance well under that,
+before any QC re-renders. Finishing the film needs a credit top-up.
 
 ---
 
