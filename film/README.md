@@ -153,11 +153,15 @@ Never regenerate the whole film for one bad shot.
 
 ## Known blockers
 
-**ElevenLabs Flows permission is not granted.** Speech generation starts and is charged, but the
-results cannot be read back, so dialogue WAVs cannot reach the `sync_so` lipsync stage.
-Fix: reconnect the ElevenLabs connector and approve **Flows** on the authorization page.
-Until then the dialogue pipeline cannot complete.
-
 **Reference and result images are not viewable from the build environment.** The network policy
-blocks both Google Drive and the Higgsfield CDN, so every visual QC decision in the table above
-depends on human review of the result URLs.
+blocks both Google Drive and the Higgsfield CDN, so every visual QC decision in the shot list
+depends on human review of the result URLs. The same applies to generated audio — take selection
+is a human call.
+
+---
+
+## Resolved
+
+**ElevenLabs Flows permission** — granted after the connector was reconnected. Speech now generates
+and reads back, so dialogue WAVs reach the `sync_so` lipsync stage. Dialogue flow:
+`j3Lsbh9BY1CKbmdUxEMT`.
