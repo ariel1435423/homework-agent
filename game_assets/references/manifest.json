@@ -1,0 +1,298 @@
+{
+  "pack": "White House & Area 51 — 3D reference pack",
+  "generated": "2026-09-15",
+  "generator": "Higgsfield gpt_image_2_5 (1K) + bytedance_image_upscale (4K)",
+  "cdn_base": "https://d8j0ntlcm91z4.cloudfront.net/user_36FII7K7iVcFdp2sZ2VU0jhX6Pd/",
+  "note": "url_1k = original generation, url_4k = upscaled version (use this one for image-to-3D). Files live in the Higgsfield account gallery; the agent sandbox blocked the CDN so PNGs are not committed here.",
+  "images": [
+    {
+      "id": 1,
+      "group": "white_house/exterior",
+      "file": "01_north_front_elevation.png",
+      "title": "North front elevation (straight-on)",
+      "use": "multi-view geometry input — front",
+      "url_1k": "hf_20260915_120642_632d9356-43df-46e8-b3fb-5ddd70e11156.png",
+      "url_4k": "hf_20260915_121139_2f920b80-0948-4210-826a-6278883bf43a.png"
+    },
+    {
+      "id": 2,
+      "group": "white_house/exterior",
+      "file": "02_south_rear_elevation.png",
+      "title": "South facade rear elevation (straight-on)",
+      "use": "multi-view geometry input — back",
+      "url_1k": "hf_20260915_120642_6c59e533-58ea-4d82-ac86-2acac9972aa4.png",
+      "url_4k": "hf_20260915_121141_54873aec-4571-454b-b582-237ccdd0094e.png"
+    },
+    {
+      "id": 3,
+      "group": "white_house/exterior",
+      "file": "03_east_side_elevation.png",
+      "title": "East side elevation",
+      "use": "multi-view geometry input — side",
+      "url_1k": "hf_20260915_120642_69f57d9f-18c6-4c79-93ef-a297f774fc17.png",
+      "url_4k": "hf_20260915_121143_f360b76f-ffa0-47a0-be91-61e4f9139833.png"
+    },
+    {
+      "id": 4,
+      "group": "white_house/exterior",
+      "file": "04_west_side_elevation.png",
+      "title": "West side elevation (with West Wing)",
+      "use": "multi-view geometry input — side",
+      "url_1k": "hf_20260915_120740_20f609a3-2e0f-4c52-a69a-d7b37851d0ac.png",
+      "url_4k": "hf_20260915_121145_b9e2f55e-0d4d-4a40-9bbb-2534ead60cfe.png"
+    },
+    {
+      "id": 5,
+      "group": "white_house/exterior",
+      "file": "05_top_down_plan.png",
+      "title": "Top-down nadir plan of the whole complex",
+      "use": "site layout + roof geometry; trace this for the level blockout",
+      "url_1k": "hf_20260915_120642_5f4ac042-6b1e-493e-944f-e4d95241a5ca.png",
+      "url_4k": "hf_20260915_121146_8751700e-e49c-421b-8175-ce68e8de1f59.png"
+    },
+    {
+      "id": 6,
+      "group": "white_house/exterior",
+      "file": "06_aerial_3q_northwest.png",
+      "title": "3/4 aerial from northwest",
+      "use": "lighting / material reference",
+      "url_1k": "hf_20260915_120642_1b2af0c6-32d4-4a53-bb3e-a99ccdac2eb9.png",
+      "url_4k": "hf_20260915_121148_d33a125e-2c48-4f25-bea5-d11dcdb3ca29.png"
+    },
+    {
+      "id": 7,
+      "group": "white_house/exterior",
+      "file": "07_aerial_3q_southeast.png",
+      "title": "3/4 aerial from southeast",
+      "use": "lighting / material reference",
+      "url_1k": "hf_20260915_120642_040475a5-b1d9-41f5-b7e2-de5eba201871.png",
+      "url_4k": "hf_20260915_121149_04c3f02e-6a1b-4868-9124-dfab4022d845.png"
+    },
+    {
+      "id": 8,
+      "group": "white_house/exterior",
+      "file": "08_north_portico_entrance_detail.png",
+      "title": "North Portico entrance close-up",
+      "use": "texture / trim-sheet reference for columns and door",
+      "url_1k": "hf_20260915_120642_083ab07b-346e-4aea-a404-2a5953d524ca.png",
+      "url_4k": "hf_20260915_121150_b17a1efe-4e2a-401f-93ed-6d9ca8440489.png"
+    },
+    {
+      "id": 9,
+      "group": "white_house/exterior",
+      "file": "09_west_wing_exterior.png",
+      "title": "West Wing + West Colonnade + Oval Office bay",
+      "use": "separate sub-building model",
+      "url_1k": "hf_20260915_120740_69c677cc-2943-4353-981d-4845a2fc8abf.png",
+      "url_4k": "hf_20260915_121445_1d611991-ba47-41e0-8b15-18619e4dd5a2.png"
+    },
+    {
+      "id": 10,
+      "group": "white_house/interior",
+      "file": "10_oval_office.png",
+      "title": "Oval Office",
+      "use": "interior blockout + set dressing reference",
+      "url_1k": "hf_20260915_120641_a81a4af6-6bc0-42a1-94e3-e03edb272483.png",
+      "url_4k": "hf_20260915_121446_f286c20c-c61e-4ed2-9196-59fa430e3782.png"
+    },
+    {
+      "id": 11,
+      "group": "white_house/interior",
+      "file": "11_east_room.png",
+      "title": "East Room (largest state room)",
+      "use": "interior blockout; good arena space",
+      "url_1k": "hf_20260915_120642_7595d86f-b554-4af9-811d-40f4d6f30375.png",
+      "url_4k": "hf_20260915_121448_5fd024a8-e8fd-4fde-a46d-69f2efa41b7d.png"
+    },
+    {
+      "id": 12,
+      "group": "white_house/interior",
+      "file": "12_blue_room.png",
+      "title": "Blue Room (oval reception room)",
+      "use": "interior blockout",
+      "url_1k": "hf_20260915_120740_15c5c6cb-fed7-4379-8769-344d953ed011.png",
+      "url_4k": "hf_20260915_121450_e1cfccf1-bb15-4a0d-ac58-15e17a03f8d3.png"
+    },
+    {
+      "id": 13,
+      "group": "white_house/interior",
+      "file": "13_cross_hall_grand_staircase.png",
+      "title": "Cross Hall and Grand Staircase",
+      "use": "main circulation corridor",
+      "url_1k": "hf_20260915_120642_f71fcab8-752a-4f9c-bde3-a95392ada957.png",
+      "url_4k": "hf_20260915_121451_900d87de-2a7e-4728-8d76-85bd02c556fb.png"
+    },
+    {
+      "id": 14,
+      "group": "white_house/interior",
+      "file": "14_situation_room.png",
+      "title": "Situation Room",
+      "use": "basement objective room",
+      "url_1k": "hf_20260915_120841_9c66b273-dec7-4a07-add2-17259a39f84a.png",
+      "url_4k": "hf_20260915_121453_6540ff1d-013c-445d-99c6-f556d434db5b.png"
+    },
+    {
+      "id": 15,
+      "group": "white_house/interior",
+      "file": "15_press_briefing_room.png",
+      "title": "Press Briefing Room",
+      "use": "interior blockout",
+      "url_1k": "hf_20260915_120841_a5bcc850-5593-49b4-b1c8-72fc99f510d4.png",
+      "url_4k": "hf_20260915_121455_267b55df-6518-4348-be2a-99fb2bb69963.png"
+    },
+    {
+      "id": 16,
+      "group": "white_house/interior",
+      "file": "16_lincoln_bedroom.png",
+      "title": "Lincoln Bedroom",
+      "use": "interior blockout",
+      "url_1k": "hf_20260915_120840_eea1d4ed-2fbb-4140-92d5-693369f1dd3d.png",
+      "url_4k": "hf_20260915_121457_7ba6b571-64b3-4e5d-9c46-46f2ea13f62f.png"
+    },
+    {
+      "id": 17,
+      "group": "white_house/grounds",
+      "file": "17_north_lawn_fountain.png",
+      "title": "North Lawn with circular fountain and driveway",
+      "use": "environment layout",
+      "url_1k": "hf_20260915_120742_5b70b66b-ff8b-47d9-a07c-d3d53caf6ebc.png",
+      "url_4k": "hf_20260915_121643_ca1135ae-5986-4714-a074-453455f6ab8a.png"
+    },
+    {
+      "id": 18,
+      "group": "white_house/grounds",
+      "file": "18_south_lawn_fountain.png",
+      "title": "South Lawn with large fountain",
+      "use": "environment layout",
+      "url_1k": "hf_20260915_120740_0c34bf1b-3bbd-48ca-b276-a91aaac089dd.png",
+      "url_4k": "hf_20260915_121646_85c936c2-880f-4a06-9dac-84fa123c632c.png"
+    },
+    {
+      "id": 19,
+      "group": "white_house/grounds",
+      "file": "19_fountain_asset_closeup.png",
+      "title": "Fountain, isolated",
+      "use": "DIRECT image-to-3D prop input",
+      "url_1k": "hf_20260915_120740_c613a0eb-1870-424c-a1e5-39fae1a5fff4.png",
+      "url_4k": "hf_20260915_121649_200ab3a0-7ab9-4165-bedd-0d59398eaedc.png"
+    },
+    {
+      "id": 20,
+      "group": "white_house/grounds",
+      "file": "20_rose_garden.png",
+      "title": "Rose Garden",
+      "use": "environment layout",
+      "url_1k": "hf_20260915_120740_9737ec6b-542a-4f3c-bee9-06dd11bb5c7f.png",
+      "url_4k": "hf_20260915_121652_b535814e-d31d-492f-821f-7e06dc86c03b.png"
+    },
+    {
+      "id": 21,
+      "group": "white_house/grounds",
+      "file": "21_perimeter_fence_gate.png",
+      "title": "Perimeter fence, gate and guard booth",
+      "use": "modular fence asset + gate prop",
+      "url_1k": "hf_20260915_120740_6704e736-2230-49e6-a5d8-4fa4f03bd494.png",
+      "url_4k": "hf_20260915_121653_a1940b45-5814-4001-aa4e-65e0980d6339.png"
+    },
+    {
+      "id": 22,
+      "group": "area51/exterior",
+      "file": "22_main_gate.png",
+      "title": "Main gate, boom barrier, warning signs",
+      "use": "level entrance set piece",
+      "url_1k": "hf_20260915_120740_09809518-1053-4825-88ca-3db9c84983b6.png",
+      "url_4k": "hf_20260915_121655_ea009bd4-02b5-44da-affd-89ff95d4ae89.png"
+    },
+    {
+      "id": 23,
+      "group": "area51/exterior",
+      "file": "23_top_down_base_plan.png",
+      "title": "Top-down nadir plan of the base",
+      "use": "site layout; trace for the level blockout",
+      "url_1k": "hf_20260915_120740_53a0108b-207c-47e0-8791-4b24e74afaa1.png",
+      "url_4k": "hf_20260915_121656_b26369c5-4e55-4a54-b3f0-c8dbc2b12c0e.png"
+    },
+    {
+      "id": 24,
+      "group": "area51/exterior",
+      "file": "24_hangar_exterior.png",
+      "title": "Large hangar exterior",
+      "use": "DIRECT image-to-3D building input",
+      "url_1k": "hf_20260915_120741_de10a7fd-df88-4597-ace0-2f7f2e895775.png",
+      "url_4k": "hf_20260915_121658_253230ed-4972-4a0f-829b-ab263a29e72b.png"
+    },
+    {
+      "id": 25,
+      "group": "area51/exterior",
+      "file": "25_aerial_runway_wide.png",
+      "title": "Wide 3/4 aerial of runway and base",
+      "use": "environment scale + skybox reference",
+      "url_1k": "hf_20260915_120841_3f5d7f6c-b8f0-4d56-8880-c1c37ccb0e96.png",
+      "url_4k": "hf_20260915_121832_177f7a30-4c7a-4113-bf64-b0d3b9dc986a.png"
+    },
+    {
+      "id": 26,
+      "group": "area51/exterior",
+      "file": "26_radar_antenna_field.png",
+      "title": "Radomes, radar dish and antenna masts",
+      "use": "prop set",
+      "url_1k": "hf_20260915_122318_30852f73-77f2-41a0-aea5-0d57138c9761.png",
+      "url_4k": "hf_20260915_122318_30852f73-77f2-41a0-aea5-0d57138c9761.png",
+      "note": "upscale failed twice; regenerated natively at high quality 2K instead — single URL is the 2K original"
+    },
+    {
+      "id": 27,
+      "group": "area51/exterior",
+      "file": "27_control_tower.png",
+      "title": "Control tower, isolated",
+      "use": "DIRECT image-to-3D building input",
+      "url_1k": "hf_20260915_120840_892e51f9-d707-4f50-9344-3c50a4879dd6.png",
+      "url_4k": "hf_20260915_121837_48dc3c2a-79b2-480b-8555-25b4a1a5479e.png"
+    },
+    {
+      "id": 28,
+      "group": "area51/exterior",
+      "file": "28_support_buildings.png",
+      "title": "Barracks and support building street",
+      "use": "modular filler buildings",
+      "url_1k": "hf_20260915_120840_5de4c730-0ef3-4440-b7cf-5ab635905707.png",
+      "url_4k": "hf_20260915_121839_c90d1d05-2089-4d8d-838c-5d3630f27dea.png"
+    },
+    {
+      "id": 29,
+      "group": "area51/exterior",
+      "file": "29_warning_signs_prop.png",
+      "title": "Restricted area warning signs, isolated",
+      "use": "DIRECT image-to-3D prop input",
+      "url_1k": "hf_20260915_120908_c10b936c-b798-4995-8d5e-ed50eb801037.png",
+      "url_4k": "hf_20260915_121841_e433822c-7797-475e-b850-1fd310566cbb.png"
+    },
+    {
+      "id": 30,
+      "group": "area51/interior",
+      "file": "30_hangar_interior.png",
+      "title": "Hangar interior",
+      "use": "interior blockout",
+      "url_1k": "hf_20260915_120740_149bc252-3045-4229-bf24-06ca815b5174.png",
+      "url_4k": "hf_20260915_121843_3d62c498-1882-43f0-9628-3dcb56ff693b.png"
+    },
+    {
+      "id": 31,
+      "group": "area51/interior",
+      "file": "31_underground_corridor.png",
+      "title": "Underground corridor with blast doors",
+      "use": "modular corridor kit reference",
+      "url_1k": "hf_20260915_120840_c335e9c4-06eb-454f-83e1-a7f11f6adc15.png",
+      "url_4k": "hf_20260915_121910_0659b59a-d381-42ea-b304-02efaead1a37.png"
+    },
+    {
+      "id": 32,
+      "group": "area51/interior",
+      "file": "32_secret_lab.png",
+      "title": "Secret underground research laboratory",
+      "use": "interior blockout + hero set piece",
+      "url_1k": "hf_20260915_120841_aa771bbb-6631-4fa9-a56c-5eccd0c4f1e8.png",
+      "url_4k": "hf_20260915_121911_c73ff08c-5f93-454c-925d-e7c78446760d.png"
+    }
+  ]
+}
